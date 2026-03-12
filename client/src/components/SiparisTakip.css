@@ -1,0 +1,74 @@
+/* SiparisTakip.css */
+.siparis-takip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  padding: var(--space-4) 0 var(--space-2);
+  position: relative;
+}
+
+/* Her adım (nokta + etiket + çizgi) */
+.takip-adim-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+/* Bağlantı çizgisi — adımlar arası yatay çizgi */
+.takip-cizgi {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: var(--clr-border);
+  z-index: 0;
+  transition: background 0.4s ease;
+}
+.takip-cizgi--tamamlandi { background: var(--clr-success); }
+
+/* Adım noktası (daire) */
+.takip-nokta {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--clr-bg);
+  border: 2.5px solid var(--clr-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.takip-nokta--tamamlandi {
+  background: #f0fdf4;
+  border-color: var(--clr-success);
+}
+.takip-nokta--aktif {
+  background: var(--clr-primary-lt);
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 4px rgba(255,107,53,.15);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(255,107,53,.15); }
+  50%       { box-shadow: 0 0 0 8px rgba(255,107,53,.08); }
+}
+
+.takip-ikon { font-size: 1.2rem; }
+
+/* Etiket */
+.takip-label {
+  margin-top: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--clr-text-muted);
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.takip-label--tamamlandi { color: #16a34a; font-weight: 600; }
+.takip-label--aktif      { color: var(--clr-primary); font-weight: 700; }

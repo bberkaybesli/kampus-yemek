@@ -1,0 +1,105 @@
+/* SiparisForm.css */
+.siparis-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.siparis-form-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--clr-secondary);
+  margin-bottom: var(--space-2);
+}
+
+/* Ürün listesi */
+.urun-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.urun-satir {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--clr-surface);
+  border-bottom: 1px solid var(--clr-border);
+  gap: var(--space-4);
+}
+.urun-satir:last-child { border-bottom: none; }
+.urun-satir:nth-child(odd) { background: var(--clr-bg); }
+
+.urun-bilgi { flex: 1; display: flex; align-items: center; gap: var(--space-4); }
+.urun-isim { font-size: var(--font-size-sm); font-weight: 500; }
+.urun-fiyat { font-weight: 700; color: var(--clr-primary); font-size: var(--font-size-sm); }
+
+/* Sayaç (+ / −) */
+.urun-kontrol {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sayac-btn {
+  width: 30px; height: 30px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--clr-border);
+  background: var(--clr-surface);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--clr-text-muted);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--transition);
+  line-height: 1;
+}
+.sayac-btn:hover:not(:disabled) { border-color: var(--clr-primary); color: var(--clr-primary); background: var(--clr-primary-lt); }
+.sayac-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.sayac-btn--ekle { border-color: var(--clr-primary); color: var(--clr-primary); }
+.sayac-btn--ekle:hover { background: var(--clr-primary); color: #fff; }
+
+.sayac-deger { width: 24px; text-align: center; font-weight: 700; font-size: var(--font-size-sm); }
+
+/* Ödeme seçenekleri */
+.odeme-secenekler { display: flex; gap: var(--space-3); }
+
+.odeme-chip {
+  flex: 1;
+  text-align: center;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--clr-text-muted);
+}
+.odeme-chip:hover { border-color: var(--clr-primary); color: var(--clr-primary); }
+.odeme-chip--aktif { border-color: var(--clr-primary); background: var(--clr-primary-lt); color: var(--clr-primary); }
+
+/* Footer */
+.siparis-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--clr-border);
+}
+
+.toplam-fiyat {
+  font-size: var(--font-size-lg);
+  color: var(--clr-text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.toplam-fiyat strong { font-size: var(--font-size-2xl); color: var(--clr-primary); font-weight: 800; }
+
+.loading-text { color: var(--clr-text-muted); font-size: var(--font-size-sm); }

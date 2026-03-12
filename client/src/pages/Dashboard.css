@@ -1,0 +1,75 @@
+/* Dashboard.css */
+.dashboard-section { margin-bottom: var(--space-10); }
+
+.section-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--clr-secondary);
+  margin-bottom: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Popüler restoran detay kartı */
+.populer-kart-ic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+.populer-restoran-ad {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--clr-secondary);
+  margin-bottom: var(--space-2);
+}
+.populer-istatistik { display: flex; gap: var(--space-8); }
+.istat-kutu { text-align: center; }
+.istat-deger { display: block; font-size: var(--font-size-2xl); font-weight: 800; color: var(--clr-primary); }
+.istat-label { font-size: var(--font-size-xs); color: var(--clr-text-muted); font-weight: 500; }
+
+/* Tablo */
+.kategori-tablo { overflow: hidden; }
+.tablo {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+.tablo thead tr {
+  background: var(--clr-secondary);
+  color: rgba(255,255,255,.85);
+}
+.tablo th {
+  padding: var(--space-3) var(--space-5);
+  text-align: left;
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.tablo tbody tr {
+  border-bottom: 1px solid var(--clr-border);
+  transition: background var(--transition);
+}
+.tablo tbody tr:last-child { border-bottom: none; }
+.tablo tbody tr:hover { background: var(--clr-bg); }
+.tablo td { padding: var(--space-4) var(--space-5); color: var(--clr-text); }
+
+.td-kategori { font-weight: 600; color: var(--clr-secondary); }
+
+/* Oran bar */
+.oran-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.oran-bar {
+  height: 8px;
+  background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
+  border-radius: var(--radius-full);
+  min-width: 4px;
+  transition: width 0.8s ease;
+}
+.oran-yuzde { font-weight: 700; color: var(--clr-primary); min-width: 36px; }

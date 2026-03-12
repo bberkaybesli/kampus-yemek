@@ -1,0 +1,96 @@
+/* Siparislarim.css */
+.sayfa-baslik-satir {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+.sayfa-baslik-satir .page-title { margin-bottom: 0; }
+
+.siparis-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 900px;
+}
+
+.siparis-kart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background: var(--clr-surface);
+}
+
+/* Üst Başlık Satırı */
+.siparis-ust-bilgi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px dashed var(--clr-border);
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.siparis-restoran-ad {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--clr-secondary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.siparis-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--font-size-sm);
+  color: var(--clr-text-muted);
+}
+.siparis-no { font-family: monospace; font-weight: 700; color: var(--clr-primary); background: var(--clr-primary-lt); padding: 2px 6px; border-radius: 4px; }
+
+/* İçerik Gövdesi */
+.siparis-icerik {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .siparis-icerik { grid-template-columns: 1fr; }
+  .siparis-takip-panel { border-top: 1px solid var(--clr-border); padding-top: var(--space-4); }
+}
+
+/* Sol panel: Ürünler ve Toplam */
+.siparis-urunler-panel { display: flex; flex-direction: column; gap: var(--space-4); justify-content: space-between; }
+
+.sp-urun-liste { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+.sp-urun-liste li { display: flex; justify-content: space-between; font-size: var(--font-size-sm); }
+.sp-urun-isim { color: var(--clr-text); font-weight: 500; }
+.sp-urun-fiyat { color: var(--clr-secondary); font-weight: 600; }
+
+.sp-ozet {
+  background: var(--clr-bg);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sp-odeme-tipi { font-size: var(--font-size-sm); color: var(--clr-text-muted); }
+.sp-odeme-tipi strong { color: var(--clr-secondary); }
+
+.sp-toplam { font-size: var(--font-size-sm); color: var(--clr-text-muted); font-weight: 600; }
+.sp-toplam span { font-size: var(--font-size-lg); font-weight: 800; color: var(--clr-primary); margin-left: var(--space-2); }
+
+/* Sağ Panel: Takip Çizelgesi */
+.siparis-takip-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--space-2);
+}
+
+.sp-demo-aksiyonlar button { opacity: 0.5; }
+.sp-demo-aksiyonlar button:hover { opacity: 1; }
