@@ -28,16 +28,30 @@ Bu uygulama, kampüs içerisindeki yemek sipariş süreçlerini dijitalleştirer
 
 ## 📂 Klasör Yapısı
 
-* `client/` - Frontend (Arayüz) kodları.
-* `server/` - Backend (API ve Sunucu) kodları.
-* `.gitignore` - Gereksiz node_modülleri ve config dosyalarını gizler.
+* **client/** - Frontend (Arayüz) kodları.
+* **server/** - Backend (API ve Sunucu) kodları.
+* **.gitignore** - Gereksiz node_modülleri ve config dosyalarını gizler.
 
 ---
 
 ## ⚙️ Kurulum ve Çalıştırma
 
-Projeyi yerelinizde çalıştırmak için:
+Projeyi yerelinizde çalıştırmak için aşağıdaki komutları sırasıyla terminalde çalıştırın:
 
-1. **Repoyu Klonlayın:**
-   ```bash
-   git clone [https://github.com/bberkaybesli/kampus-yemek.git](https://github.com/bberkaybesli/kampus-yemek.git)
+**1. Repoyu Klonlayın:**
+git clone https://github.com/bberkaybesli/kampus-yemek.git
+
+**2. Sunucu (Server) Kurulumu:**
+cd server
+npm install
+npm start
+
+**3. İstemci (Client) Kurulumu:**
+cd ../client
+npm install
+npm start
+
+
+
+
+*Bu proje eğitim amaçlı geliştirilmektedir.*
