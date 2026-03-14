@@ -1,49 +1,43 @@
-Campus Food Ordering System 🍔
+# 🎓 Campus Food Ordering System
 
-Bu proje, üniversite kampüsleri içerisinde yemek sipariş sürecini dijitalleştirmek ve hızlandırmak amacıyla geliştirilmiş tam kapsamlı (Full-Stack) bir web uygulamasıdır. Kullanıcıların kampüs içindeki restoranlardan kolayca sipariş vermesini ve yönetilmesini sağlar.
+Üniversite kampüsleri için özel olarak tasarlanmış, öğrenci ve restoranları bir araya getiren modern bir yemek sipariş platformu.
 
-🚀 Özellikler
-Kullanıcı Dostu Arayüz: Modern ve responsive (mobil uyumlu) tasarım.
+---
 
-Restoran Yönetimi: Menülerin ve yemeklerin kolayca listelenmesi.
+## 🚀 Proje Hakkında
 
-Sipariş Takibi: Kullanıcıların sipariş durumlarını anlık görüntülemesi.
+Bu uygulama, kampüs içerisindeki yemek sipariş süreçlerini dijitalleştirerek hem restoran yönetimini kolaylaştırmayı hem de öğrencilerin hızlıca yemek siparişi vermesini sağlamayı amaçlar.
 
-Node.js Backend: Hızlı ve ölçeklenebilir sunucu mimarisi.
+### ✨ Temel Özellikler
+* **Kullanıcı Arayüzü:** Responsive ve modern tasarım.
+* **Restoran Yönetimi:** Menülerin ve yemeklerin kolay listelenmesi.
+* **Sipariş Takibi:** Siparişlerin anlık durum takibi.
+* **Performans:** Node.js tabanlı hızlı backend mimarisi.
 
-Client-Server Yapısı: Temiz kod prensiplerine uygun ayrıştırılmış klasör yapısı.
+---
 
-🛠️ Kullanılan Teknolojiler
-Frontend: React.js / HTML5 / CSS3 / JavaScript
+## 🛠️ Teknolojiler
 
-Backend: Node.js / Express.js
+| Alan | Kullanılan Araçlar |
+| :--- | :--- |
+| **Frontend** | React / JavaScript / CSS3 |
+| **Backend** | Node.js / Express.js |
+| **Yönetim** | npm / Git |
 
-Veritabanı: (Buraya projenin kullandığı veritabanını ekleyebilirsin, örn: MongoDB / Firebase)
+---
 
-Paket Yönetimi: npm
+## 📂 Klasör Yapısı
 
-📂 Klasör Yapısı
-Bash
-├── client/          # Frontend kodları (React/Vue vb.)
-├── server/          # Backend API servisleri (Node.js/Express)
-└── .gitignore       # Git tarafında takip edilmeyecek dosyalar
+* `client/` - Frontend (Arayüz) kodları.
+* `server/` - Backend (API ve Sunucu) kodları.
+* `.gitignore` - Gereksiz node_modülleri ve config dosyalarını gizler.
 
-⚙️ Kurulum ve Çalıştırma
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+---
 
-1-Projeyi Klonlayın:
-git clone https://github.com/bberkaybesli/kampus-yemek.git
+## ⚙️ Kurulum ve Çalıştırma
 
-2-Backend Kurulumu:
-cd server
-npm install
-npm start
+Projeyi yerelinizde çalıştırmak için:
 
-3-Frontend Kurulumu:
-cd ../client
-npm install
-npm start
-
-[ ] Restoranlar için admin paneli geliştirmesi.
-
-[ ] Canlı destek sistemi.
+1. **Repoyu Klonlayın:**
+   ```bash
+   git clone [https://github.com/bberkaybesli/kampus-yemek.git](https://github.com/bberkaybesli/kampus-yemek.git)
