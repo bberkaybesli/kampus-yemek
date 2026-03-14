@@ -1,4 +1,5 @@
 Campus Food Ordering System 🍔
+
 Bu proje, üniversite kampüsleri içerisinde yemek sipariş sürecini dijitalleştirmek ve hızlandırmak amacıyla geliştirilmiş tam kapsamlı (Full-Stack) bir web uygulamasıdır. Kullanıcıların kampüs içindeki restoranlardan kolayca sipariş vermesini ve yönetilmesini sağlar.
 
 🚀 Özellikler
